@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language="javascript">
+function findEventSuccessCB (events) {
+    // do something with resulting list of objects
+    for (var i in events) alert(events[i].id);
+}
+
+function errorCB (err) {
+    // do something with resulting errors
+    alert(err.code);
+}
+
+// Perform an calendar search. Initially filter the list to Calendar records starting 
+// before April 9, 2011 @ 5pm (UTC).
+navigator.calendar.findEvents(findEventSuccessCB, errorCB, { filter: { startBefore: '2012-09-23 08:00' } });
+</script>
+</head>
+<body>
+
+</body>
+</html>

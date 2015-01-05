@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="[Cornerstone2.0 LiveDocument] Base - Forms" />
+  <meta name="description" content="[Cornerstone2.0 LiveDocument] Plugin - Button DATA-API" />
+  <meta charset="utf-8" />
+  <!-- Style -->
+  <link rel="stylesheet" href="http://cornerstone.sktelecom.com/2/dist/lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="http://cornerstone.sktelecom.com/2/dist/src/style/theme-white/cornerstone.css">
+  
+  <!-- Common -->
+  <script src="http://cornerstone.sktelecom.com/2/dist/lib/jquery/jquery-1.10.2.min.js"></script>
+  <script src="http://cornerstone.sktelecom.com/2/dist/src/widget/touch/widget-touch.js"></script>
+<script>
+	function move_Roommain(){
+		location.href = "./index_roommain.html";
+	}  
+</script>
+</head>
+<center>
+<hr/>
+<p>
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option1"> 공개
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option3"> 비공개
+    </label>
+</div>
+<p>
+	<div class="col-md-1" align="center">
+ 		방이름 : <input type="text" class="form-control">
+	</div>
+<p>
+	<div class="col-md-1">
+	 	패 스 워 드 : <input type="password" class="form-control"><br>
+ 		패스워드 확인 : <input type="password" class="form-control">
+	</div>
+<hr/>
+<p>
+<input type=button value='방만들기' onClick='move_Roommain()'/>
+<input type=reset value='취소'/>
+  <!-- Plugin -->
+  <script src="http://cornerstone.sktelecom.com/2/dist/lib/bootstrap/js/bootstrap.js"></script>
+  <script src="http://cornerstone.sktelecom.com/2/dist/src/widget/button/widget-button.js"></script>
+</center>
+</body>
+</html>
